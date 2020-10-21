@@ -196,3 +196,55 @@ int main()
     cout << "Sorted array is \n"; 
     printArray(arr, n); 
 } 
+#
+#c++ program to find lcm
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int n1, n2, max;
+
+    cout << "Enter two numbers: ";
+    cin >> n1 >> n2;
+    
+    // maximum value between n1 and n2 is stored in max
+    max = (n1 > n2) ? n1 : n2;
+
+    do
+    {
+        if (max % n1 == 0 && max % n2 == 0)
+        {
+            cout << "LCM = " << max;
+            break;
+        }
+        else
+            ++max;
+    } while (true);
+    
+    return 0;
+}
+
+#python program to check armstrong no
+# Python program to check if the number is an Armstrong number or not
+
+# take input from the user
+num = int(input("Enter a number: "))
+
+# initialize sum
+sum = 0
+
+# find the sum of the cube of each digit
+temp = num
+while temp > 0:
+   digit = temp % 10
+   sum += digit ** 3
+   temp //= 10
+
+# display the result
+if num == sum:
+   print(num,"is an Armstrong number")
+else:
+   print(num,"is not an Armstrong number")
+
