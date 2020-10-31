@@ -10,11 +10,10 @@ int minKey(int key[], bool mstSet[])
 { 
     // Initialize min value 
     int min = INT_MAX, min_index; 
- 
+    //loopOP
     for (int v = 0; v < V; v++) 
         if (mstSet[v] == false && key[v] < min) 
             min = key[v], min_index = v; 
- 
     return min_index; 
 } 
  
@@ -161,7 +160,6 @@ int numberOfSquares(int X[], int Y[],
         for (j = i + 1; j < N; j++) { 
   
             int dist = abs(X[i] - X[j]); 
-  
             // Add the count to m1 
             m1[dist]++; 
         } 
