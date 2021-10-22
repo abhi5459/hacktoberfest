@@ -19,14 +19,7 @@ int minKey(int key[], bool mstSet[])
  
 // A utility function to print the 
 // constructed MST stored in parent[] 
-void printMST(int parent[], int graph[V][V]) 
-{ 
-    cout<<"Edge \tWeight\n"; 
-    for (int i = 1; i < V; i++) 
-        cout<<parent[i]<<" - "<<i<<" \t"<<graph[i][parent[i]]<<" \n"; 
-} 
- 
-// Function to construct and print MST for 
+ction to construct and print MST for 
 // a graph represented using adjacency 
 // matrix representation 
 void primMST(int graph[V][V]) 
